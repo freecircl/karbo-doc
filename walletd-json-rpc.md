@@ -940,8 +940,9 @@ Output:
 | totalOutputCount | Total number of unspent outputs of the specified addresses. | uint64 | 1000    |
 | fusionReadyCount | Number of outputs that can be optimized.                    | uint64 | 50      |
 
-Input example: ```
+Input example: 
 
+```
  {
    "params":{
       "threshold":1000000,
@@ -955,11 +956,11 @@ Input example: ```
    "id":"test",
    "method":"estimateFusion"
  }
-
 ```
 
-Output example: ```
+Output example:
 
+```
  {
    "jsonrpc":"2.0",
    "id":"test",
@@ -968,7 +969,6 @@ Output example: ```
       "fusionReadyCount":50
    }
  }
-
 ```
 
 Send fusion transaction
@@ -999,8 +999,9 @@ Output:
 |-----------------|-------------------------------|--------|------------------------------------------------------------------|
 | transactionHash | Hash of the sent transaction. | string | 93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f |
 
-Input Example: ```
+Input Example: 
 
+```
  {
    "params":{
       "anonymity":6,
@@ -1016,11 +1017,11 @@ Input Example: ```
    "id":"test",
    "method":"sendFusionTransaction"
  }
-
 ```
 
-Return value example: ```
+Return value example:
 
+```
  {
    "jsonrpc":"2.0",
    "id":"test",
@@ -1028,7 +1029,6 @@ Return value example: ```
       "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"
    }
  }
-
 ```
 
 Validate address
@@ -1051,8 +1051,9 @@ Output:
 | spendPublicKey | Public spend key                        | string  | 17d068a5d62767661597779af63b7938f1e723052a2d0b8ed8fc6680cde3f88b                                |
 | viewPublicKey  | Public view key                         | string  | 32c547698847b6f9b04bc9035a8d97074d2c09bd8ef63f67b0941f30c8f39e9a                                |
 
-Input Example: ```
+Input Example:
 
+```
  {
     "jsonrpc":"2.0",
     "method":"validateAddress",
@@ -1060,11 +1061,11 @@ Input Example: ```
         "address":"Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT"
     }
  }
-
 ```
 
-Return value example: ``` 
+Return value example: 
 
+``` 
  {
     "jsonrpc": "2.0",
     "result": {
@@ -1074,7 +1075,6 @@ Return value example: ```
         "viewPublicKey": "32c547698847b6f9b04bc9035a8d97074d2c09bd8ef63f67b0941f30c8f39e9a"
      }
  }
-
 ```
 
 Create delayed transaction
@@ -1112,8 +1112,9 @@ Output:
 |-----------------|-------------------------------|--------|------------------------------------------------------------------|
 | transactionHash | Hash of the sent transaction. | string | 93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f |
 
-Input Example: ``` 
+Input Example: 
 
+``` 
  {
   "params":{
      "anonymity":0,
@@ -1145,11 +1146,11 @@ Input Example: ```
   "id":"test",
   "method":"createDelayedTransaction"
  } 
-
 ```
 
-Return value example: ``` 
+Return value example: 
 
+``` 
  {
   "jsonrpc":"2.0",
   "id":"test",
@@ -1157,7 +1158,6 @@ Return value example: ```
      "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"
   }
  }
-
 ```
 
 Send delayed transaction
@@ -1175,8 +1175,9 @@ Output:
 
 In case of success returns an empty JSON object.
 
-Input example: ``` 
+Input example:
 
+``` 
  {
   "params":{
      "transactionHash":"c671d1005eaaf7c51b1e23eeec1c899e43fa7a332cdc2bcf1e45b908e23d8837"
@@ -1186,17 +1187,16 @@ Input example: ```
   "method":"sendDelayedTransaction"
 
 }
-
 ```
 
-Output example: ```
+Output example:
 
+```
  {
     "id":"1",
     "jsonrpc":"2.0",
     "result": {}
  }
-
 ```
 
 Get delayed transaction hashes
@@ -1212,18 +1212,19 @@ Output:
 |-------------------|-----------------------------------------------------------|--------|-----------|
 | transactionHashes | Array of strings, where each string is a transaction hash | array  | See below |
 
-Input example: ``` 
+Input example: 
 
+``` 
  {
     "jsonrpc": "2.0",
     "id": "1", 
     "method": "getDelayedTransactionHashes"
  }
-
 ```
 
-Output example: ```
+Output example: 
 
+```
  {
   "jsonrpc":"2.0",
   "id":"test",
@@ -1236,7 +1237,6 @@ Output example: ```
      ]
   }
  }
-
 ```
 
 Delete delayed transaction
@@ -1254,8 +1254,9 @@ Output:
 
 In case of success returns an empty JSON object.
 
-Input example: ``` 
+Input example: 
 
+``` 
  {
    "params":{
       "transactionHash":"c671d1005eaaf7c51b1e23eeec1c899e43fa7a332cdc2bcf1e45b908e23d8837"
@@ -1264,15 +1265,14 @@ Input example: ```
  "id":"test",
  "method":"deleteDelayedTransaction"
  } 
-
 ```
 
-Output example: ```
+Output example:
 
+```
  { 
     "id":"1",
     "jsonrpc":"2.0",
     "result": {}
  }
-
 ```
