@@ -873,49 +873,49 @@ Output:
 
 Input Example: ```
 
-`{  `
-`  "params":{  `
-`     "anonymity":0,`
-`     "fee":1000000,`
-`     "unlockTime":0,`
-`     "paymentId":"somePaymentId",`
-`     "addresses":[  `
-`        "KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG",`
-`        "KiHzZqEzezyaZCP5AdZ1v6K1dAi5aBrU3E9czrZbS6whPUVDBLPLdqU4aiLviNUFfXMEh2kQwSEJGBNpegY6To4wQ9aBwDU",`
-`        "KacpStR6z373JoBgBAVoUch9C1Uzbp3p3e95NJkZtcGPe7sJ3AZNzfzL1qzh7zqvekDxvBZepZGqcRsa7MhCmP3NL27GH5V"`
-`     ],`
-`     "transfers":[  `
-`        {  `
-`           "amount":123456,`
-`           "address":"KbjVbfZkw5eYMMBBYCEoc3TtMe6yNQgPvSepH1KRqxhc3Pr2VBtFLrtD1E6oQAEbtJQsbJrtqWjMoKo1q5HtKAFdUcYBH41"`
-`        },`
-`        {  `
-`           "amount":234567,`
-`           "address":"Kis97C9AM1PQataUmbpjmXbZz2KSynxgURYb8moceDPXVWBwt4pjGtvAmfY3qmhcrBZgyKfLGnhGCW8LxBHGiDrrC5GLjhD"`
-`        },`
-`        {  `
-`           "amount":345678,`
-`           "address":"KdAzF8benG4aygdY5v5R5j8bLrzN1hSTfb2c8UneNbNW1VB4QnWD7SSPGpne17HGiLhid1VGq73B3Wc6ZWLaq2GZEaw9hrc"`
-`        }`
-`     ],`
-`     "changeAddress":"KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG"`
-`  },`
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "method":"sendTransaction"`
-`}`
+{
+   "params":{  
+   "anonymity":0,
+   "fee":1000000,
+   "unlockTime":0,
+   "paymentId":"somePaymentId",
+   "addresses":[  
+   "KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG",
+   "KiHzZqEzezyaZCP5AdZ1v6K1dAi5aBrU3E9czrZbS6whPUVDBLPLdqU4aiLviNUFfXMEh2kQwSEJGBNpegY6To4wQ9aBwDU",
+   "KacpStR6z373JoBgBAVoUch9C1Uzbp3p3e95NJkZtcGPe7sJ3AZNzfzL1qzh7zqvekDxvBZepZGqcRsa7MhCmP3NL27GH5V"
+      ],
+   "transfers":[
+         {  
+`           "amount":123456,
+`           "address":"KbjVbfZkw5eYMMBBYCEoc3TtMe6yNQgPvSepH1KRqxhc3Pr2VBtFLrtD1E6oQAEbtJQsbJrtqWjMoKo1q5HtKAFdUcYBH41"
+         },
+         {  
+            "amount":234567,
+            "address":"Kis97C9AM1PQataUmbpjmXbZz2KSynxgURYb8moceDPXVWBwt4pjGtvAmfY3qmhcrBZgyKfLGnhGCW8LxBHGiDrrC5GLjhD"
+         },
+         {  
+            "amount":345678,
+            "address":"KdAzF8benG4aygdY5v5R5j8bLrzN1hSTfb2c8UneNbNW1VB4QnWD7SSPGpne17HGiLhid1VGq73B3Wc6ZWLaq2GZEaw9hrc"
+         }
+       ],
+      "changeAddress":"KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG"
+   },
+   "jsonrpc":"2.0",
+   "id":"test",
+   "method":"sendTransaction"
+}
 
 ```
 
 Return value example: ```
 
-`{  `
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "result":{  `
-`     "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"`
-`  }`
-`}`
+ {
+   "jsonrpc":"2.0",`
+   "id":"test",`
+   "result":{  `
+      "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"`
+  }
+}
 
 ```
 
@@ -942,32 +942,32 @@ Output:
 
 Input example: ```
 
-`{  `
-`  "params":{  `
-`     "threshold":1000000,`
-`     "addresses":[  `
-`        "Kis97C9AM1PQataUmbpjmXbZz2KSynxgURYb8moceDPXVWBwt4pjGtvAmfY3qmhcrBZgyKfLGnhGCW8LxBHGiDrrC5GLjhD",`
-`        "KdAzF8benG4aygdY5v5R5j8bLrzN1hSTfb2c8UneNbNW1VB4QnWD7SSPGpne17HGiLhid1VGq73B3Wc6ZWLaq2GZEaw9hrc",`
-`        "KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG"`
-`     ]`
-`  },`
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "method":"estimateFusion"`
-`}`
+ {
+   "params":{
+      "threshold":1000000,
+      "addresses":[
+         "Kis97C9AM1PQataUmbpjmXbZz2KSynxgURYb8moceDPXVWBwt4pjGtvAmfY3qmhcrBZgyKfLGnhGCW8LxBHGiDrrC5GLjhD",
+         "KdAzF8benG4aygdY5v5R5j8bLrzN1hSTfb2c8UneNbNW1VB4QnWD7SSPGpne17HGiLhid1VGq73B3Wc6ZWLaq2GZEaw9hrc",
+         "KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG"
+     ]
+   },
+   "jsonrpc":"2.0",
+   "id":"test",
+   "method":"estimateFusion"
+ }
 
 ```
 
 Output example: ```
 
-`{`
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "result":{  `
-`     "totalOutputCount":1000,`
-`     "fusionReadyCount":50`
-`  }`
-`}`
+ {
+   "jsonrpc":"2.0",
+   "id":"test",
+   "result":{
+      "totalOutputCount":1000,
+      "fusionReadyCount":50
+   }
+ }
 
 ```
 
@@ -1001,33 +1001,33 @@ Output:
 
 Input Example: ```
 
-`{  `
-`  "params":{  `
-`     "anonymity":6,`
-`     "threshold":1000000,`
-`     "addresses":[  `
-`        "Kis97C9AM1PQataUmbpjmXbZz2KSynxgURYb8moceDPXVWBwt4pjGtvAmfY3qmhcrBZgyKfLGnhGCW8LxBHGiDrrC5GLjhD",`
-`        "KdAzF8benG4aygdY5v5R5j8bLrzN1hSTfb2c8UneNbNW1VB4QnWD7SSPGpne17HGiLhid1VGq73B3Wc6ZWLaq2GZEaw9hrc",`
-`        "KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG"`
-`     ],`
-`     "destinationAddress":"Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT"`
-`  },`
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "method":"sendFusionTransaction"`
-`}`
+ {
+   "params":{
+      "anonymity":6,
+      "threshold":1000000,
+      "addresses":[ 
+         "Kis97C9AM1PQataUmbpjmXbZz2KSynxgURYb8moceDPXVWBwt4pjGtvAmfY3qmhcrBZgyKfLGnhGCW8LxBHGiDrrC5GLjhD",
+         "KdAzF8benG4aygdY5v5R5j8bLrzN1hSTfb2c8UneNbNW1VB4QnWD7SSPGpne17HGiLhid1VGq73B3Wc6ZWLaq2GZEaw9hrc",
+         "KbzvFzjQeWCZawinhkDZUKF6pjDv1TLU678poSAEFKWRL3kgWk48sxCN8z6tpfkzMZ82AQyfhiU4uZ66mnU942AHKokr6PG"
+     ],
+     "destinationAddress":"Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT"
+  },
+   "jsonrpc":"2.0",
+   "id":"test",
+   "method":"sendFusionTransaction"
+ }
 
 ```
 
 Return value example: ```
 
-`{  `
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "result":{  `
-`     "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"`
-`  }`
-`}`
+ {
+   "jsonrpc":"2.0",
+   "id":"test",
+   "result":{
+      "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"
+   }
+ }
 
 ```
 
@@ -1053,27 +1053,29 @@ Output:
 
 Input Example: ```
 
-`{`
-`   "jsonrpc":"2.0",`
-`   "method":"validateAddress",`
-`   "params":{`
-`       "address":"Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT"`
-`   }`
-`}`
+ {
+    "jsonrpc":"2.0",
+    "method":"validateAddress",
+    "params":{
+        "address":"Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT"
+    }
+ }
 
 ```
 
-Return value example: ``` {
+Return value example: ``` 
 
-`   "jsonrpc": "2.0",`
-`   "result": {`
-`       "address": "Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT",`
-`       "isvalid": true,`
-`       "spendPublicKey": "17d068a5d62767661597779af63b7938f1e723052a2d0b8ed8fc6680cde3f88b",`
-`       "viewPublicKey": "32c547698847b6f9b04bc9035a8d97074d2c09bd8ef63f67b0941f30c8f39e9a"`
-`   }`
+ {
+    "jsonrpc": "2.0",
+    "result": {
+        "address": "Kak1Nwr16RtJ5M4wLVM7bnAXSMgimsgxiQtoSTXSBUrsQHQ6CbLKeXwimHyn2iqorN2DqL2b4HcaiJLvPmRbUMVXJTLqbjT",
+        "isvalid": true,
+        "spendPublicKey": "17d068a5d62767661597779af63b7938f1e723052a2d0b8ed8fc6680cde3f88b",
+        "viewPublicKey": "32c547698847b6f9b04bc9035a8d97074d2c09bd8ef63f67b0941f30c8f39e9a"
+     }
+ }
 
-} ```
+```
 
 Create delayed transaction
 --------------------------
@@ -1110,51 +1112,53 @@ Output:
 |-----------------|-------------------------------|--------|------------------------------------------------------------------|
 | transactionHash | Hash of the sent transaction. | string | 93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f |
 
-Input Example: ``` {
+Input Example: ``` 
 
-` "params":{  `
-`    "anonymity":0,`
-`    "fee":1000000,`
-`    "unlockTime":0,`
-`    "paymentId":"somePaymentId",`
-`    "addresses":[  `
-`       "KcQTbNJrh5kPVu2oJbRGA2AZAjiRdkZDMVuvzirpJD1jirBcZm4LBF5GhBb2Z4ycW8QJ35DcVpx4phx8eYbHKwHbFkKp6HF",`
-`       "KayLEZuEn35Fk7jxFrSJjACYdiNJUJUZJHqqAjyrxceCQhAemA8BFZjBKpER6zXd7zCUNm1Dw9SKc44cLtFKx8i86UQVN9s",`
-`       "Kj93UPwkr996gz7YnEbvt2MbdJH9B1LVDerpU3ccei8p7YYU1U6knMFPFLPLu1HqcVRHZWh7w5EgQYjqTZnpDTcZQM8WXh9"`
-`    ],`
-`    "transfers":[  `
-`       {  `
-`          "amount":123456,`
-`          "address":"KhSU5yrrqJXYE77xXXDiybNpvngkGAZ5S4pqfwTDLbPRceaUAuVQasmG5DZfjkhH3n62MMBfTyHGY7W772bTjMZsS6tMtsT"`
-`       },`
-`       {  `
-`          "amount":234567,`
-`          "address":"KengGF55Xgo48K6Z5qwfgF3zFMve4gaFy6GyifShHndjLeDn4Mb2PHrR2CYCUKfneRSvFujPHoeZwbMdTziCXw2jDwhThy3"`
-`       },`
-`       {  `
-`          "amount":345678,`
-`          "address":"Ka6VdMqB6XuLwvMyJsfBakaD3FzxJ1EFDcM3fHx96SvKbPZUcMVTtTsQuB3LxVBfKaYh1jTNNfyvJEKrGoysWyUZKTPv6hL"`
-`       }`
-`    ],`
-`    "changeAddress":"KcQTbNJrh5kPVu2oJbRGA2AZAjiRdkZDMVuvzirpJD1jirBcZm4LBF5GhBb2Z4ycW8QJ35DcVpx4phx8eYbHKwHbFkKp6HF"`
-` },`
-` "jsonrpc":"2.0",`
-` "id":"test",`
-` "method":"createDelayedTransaction"`
+ {
+  "params":{
+     "anonymity":0,
+     "fee":1000000,
+     "unlockTime":0,
+     "paymentId":"somePaymentId",
+     "addresses":[
+        "KcQTbNJrh5kPVu2oJbRGA2AZAjiRdkZDMVuvzirpJD1jirBcZm4LBF5GhBb2Z4ycW8QJ35DcVpx4phx8eYbHKwHbFkKp6HF",
+        "KayLEZuEn35Fk7jxFrSJjACYdiNJUJUZJHqqAjyrxceCQhAemA8BFZjBKpER6zXd7zCUNm1Dw9SKc44cLtFKx8i86UQVN9s",
+        "Kj93UPwkr996gz7YnEbvt2MbdJH9B1LVDerpU3ccei8p7YYU1U6knMFPFLPLu1HqcVRHZWh7w5EgQYjqTZnpDTcZQM8WXh9"
+     ],
+      "transfers":[  
+        {  
+           "amount":123456,
+           "address":"KhSU5yrrqJXYE77xXXDiybNpvngkGAZ5S4pqfwTDLbPRceaUAuVQasmG5DZfjkhH3n62MMBfTyHGY7W772bTjMZsS6tMtsT"
+        },
+        { 
+           "amount":234567,
+           "address":"KengGF55Xgo48K6Z5qwfgF3zFMve4gaFy6GyifShHndjLeDn4Mb2PHrR2CYCUKfneRSvFujPHoeZwbMdTziCXw2jDwhThy3"
+        },
+        {  
+           "amount":345678,
+           "address":"Ka6VdMqB6XuLwvMyJsfBakaD3FzxJ1EFDcM3fHx96SvKbPZUcMVTtTsQuB3LxVBfKaYh1jTNNfyvJEKrGoysWyUZKTPv6hL"
+        }
+      ],
+     "changeAddress":"KcQTbNJrh5kPVu2oJbRGA2AZAjiRdkZDMVuvzirpJD1jirBcZm4LBF5GhBb2Z4ycW8QJ35DcVpx4phx8eYbHKwHbFkKp6HF"
+  },
+  "jsonrpc":"2.0",
+  "id":"test",
+  "method":"createDelayedTransaction"
+ } 
 
-} ```
+```
 
-Return value example:
+Return value example: ``` 
 
-``` {
+ {
+  "jsonrpc":"2.0",
+  "id":"test",
+  "result":{
+     "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"
+  }
+ }
 
-` "jsonrpc":"2.0",`
-` "id":"test",`
-` "result":{  `
-`    "transactionHash":"93faedc8b8a80a084a02dfeffd163934746c2163f23a1b6022b32423ec9ae08f"`
-` }`
-
-} ```
+```
 
 Send delayed transaction
 ------------------------
@@ -1171,28 +1175,29 @@ Output:
 
 In case of success returns an empty JSON object.
 
-Input example:
+Input example: ``` 
 
-``` {
+ {
+  "params":{
+     "transactionHash":"c671d1005eaaf7c51b1e23eeec1c899e43fa7a332cdc2bcf1e45b908e23d8837"
+   },
+  "jsonrpc":"2.0",
+  "id":"test",
+  "method":"sendDelayedTransaction"
 
-` "params":{  `
-`    "transactionHash":"c671d1005eaaf7c51b1e23eeec1c899e43fa7a332cdc2bcf1e45b908e23d8837"`
-` },`
-` "jsonrpc":"2.0",`
-` "id":"test",`
-` "method":"sendDelayedTransaction"`
+}
 
-} ```
+```
 
-Output example:
+Output example: ```
 
-``` {
+ {
+    "id":"1",
+    "jsonrpc":"2.0",
+    "result": {}
+ }
 
-`   "id":"1",`
-`   "jsonrpc":"2.0",`
-`   "result": {}`
-
-} ```
+```
 
 Get delayed transaction hashes
 ------------------------------
@@ -1207,32 +1212,32 @@ Output:
 |-------------------|-----------------------------------------------------------|--------|-----------|
 | transactionHashes | Array of strings, where each string is a transaction hash | array  | See below |
 
-Input example:
+Input example: ``` 
 
-``` {
+ {
+    "jsonrpc": "2.0",
+    "id": "1", 
+    "method": "getDelayedTransactionHashes"
+ }
 
-`   "jsonrpc": "2.0", `
-`   "id": "1", `
-`   "method": "getDelayedTransactionHashes"`
+```
 
-} ```
+Output example: ```
 
-Output example:
+ {
+  "jsonrpc":"2.0",
+  "id":"test",
+  "result":{
+           "transactionHashes":[
+               "957dcbf54f327846ea0c7a16b2ae8c24ba3fa8305cc3bbc6424e85e7d358b44b",
+               "25bb751814dd39bf46c972bd760e7516e34200f5e5dd02fda696671e11201f78"
+           ],
+        }
+     ]
+  }
+ }
 
-``` {
-
-` "jsonrpc":"2.0",`
-` "id":"test",`
-` "result":{  `
-`          "transactionHashes":[  `
-`              "957dcbf54f327846ea0c7a16b2ae8c24ba3fa8305cc3bbc6424e85e7d358b44b",`
-`              "25bb751814dd39bf46c972bd760e7516e34200f5e5dd02fda696671e11201f78"`
-`          ],`
-`       }`
-`    ]`
-` }`
-
-} ```
+```
 
 Delete delayed transaction
 --------------------------
@@ -1249,28 +1254,25 @@ Output:
 
 In case of success returns an empty JSON object.
 
-Input example:
+Input example: ``` 
 
-``` {
-
-`  "params":{  `
-`     "transactionHash":"c671d1005eaaf7c51b1e23eeec1c899e43fa7a332cdc2bcf1e45b908e23d8837"`
-`  },`
-`  "jsonrpc":"2.0",`
-`  "id":"test",`
-`  "method":"deleteDelayedTransaction"`
-`}`
-
-```
-
-Output example:
+ {
+   "params":{
+      "transactionHash":"c671d1005eaaf7c51b1e23eeec1c899e43fa7a332cdc2bcf1e45b908e23d8837"
+  },
+ "jsonrpc":"2.0",
+ "id":"test",
+ "method":"deleteDelayedTransaction"
+ } 
 
 ```
 
-`{`
-`   "id":"1",`
-`   "jsonrpc":"2.0",`
-`   "result": {}`
-`}`
+Output example: ```
+
+ { 
+    "id":"1",
+    "jsonrpc":"2.0",
+    "result": {}
+ }
 
 ```
